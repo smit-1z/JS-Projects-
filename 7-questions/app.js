@@ -6,7 +6,6 @@ questions.forEach(function(ques){
     btn.addEventListener("click",function(e){
         questions.forEach(function(item){
             if(item !== ques){
-                
                 item.classList.remove("show-text");
             }
         })
