@@ -7,6 +7,7 @@ const btn = document.querySelector(".switch-btn");
 const video= document.querySelector(".video-container");
 console.log(video);
 
+
 btn.addEventListener("click" , function(){
     if(!btn.classList.contains('slide')){
         btn.classList.add('slide')
@@ -15,6 +16,12 @@ btn.addEventListener("click" , function(){
     else{
         btn.classList.remove('slide')
         video.play();
-
     }
 })
+
+// preloader
+
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load", function(){
+    preloader.classList.add("hide-preloader");
+});
